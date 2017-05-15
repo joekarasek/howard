@@ -30,10 +30,20 @@
       '<i class="icon-chevron-right"></i>'
     ]
   });
-  HelloWorldDevsTysonSteele.associationCarousel('.js-associations-carousel', {
+  HelloWorldDevsTysonSteele.pyramidCarousel('.js-associations-carousel', {
     nav: false,
-    autoWidth: false,
-    slideBy: 1,
+    items: 2,
+    responsive: {
+      480: {
+        items: 2
+      },
+      768: {
+        items: 3
+      },
+      992: {
+        items: 4
+      }
+    }
   });
   HelloWorldDevsTysonSteele.tourCarousel('.js-gallery-carousel', {
     items: 1,

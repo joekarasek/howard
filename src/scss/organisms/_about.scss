@@ -1,5 +1,5 @@
 .about {
-  background-color: #ffffff;
+  background-color: #007481;
   &__secondary {
     background-color: #f4f3ee;
     padding-top: 20px;
@@ -11,7 +11,7 @@
     text-align: center;
   }
     &__title {
-      color: #5a710d;
+      color: #FFF8BD;
     }
 
   &__content {
@@ -42,31 +42,34 @@
       }
     }
       &__copy {
-        @media (max-width: $width-md) {
-          display: none;
-        }
-        &--doctor {
-          color: #5a710d;
-          line-height: 1;
-          margin-bottom: 0;
-          font-family: $ff-mont;
-          font-weight: 700;
-        }
-        &--mobile {
-          display: none;
-          @media (max-width: $width-md) {
-            display: inherit;
-          }
-        }
-        &--read-more {
-          color: #5a710d;
-          text-decoration: underline;
-          font-size: 18px;
-          &:hover {
-            color: #5a710d;
-            text-decoration: none !important;
-          }
-        }
+        color: #ffffff;
+        font-size: 14px;
+        line-height: 1.5 !important;
+        //@media (max-width: $width-md) {
+        //  display: none;
+        //}
+        //&--doctor {
+        //  color: #5a710d;
+        //  line-height: 1;
+        //  margin-bottom: 0;
+        //  font-family: $ff-mont;
+        //  font-weight: 700;
+        //}
+        //&--mobile {
+        //  display: none;
+        //  @media (max-width: $width-md) {
+        //    display: inherit;
+        //  }
+        //}
+        //&--read-more {
+        //  color: #5a710d;
+        //  text-decoration: underline;
+        //  font-size: 18px;
+        //  &:hover {
+        //    color: #5a710d;
+        //    text-decoration: none !important;
+        //  }
+        //}
       }
 
   //Additional Team Mates Styling
