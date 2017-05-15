@@ -1,0 +1,106 @@
+.about {
+  background-color: #ffffff;
+  &__secondary {
+    background-color: #f4f3ee;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  &__heading {
+    padding-top: 30px;
+    text-align: center;
+  }
+    &__title {
+      color: #5a710d;
+    }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    @media (min-width: $width-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+    &__image-wrapper {
+      text-align: center;
+      @media (min-width: $width-sm) {
+        width: 40%;
+      }
+      @media (max-width: $width-sm) {
+        padding-bottom: 10px;
+        img { max-width: 280px; }
+      }
+    }
+    &__copy-wrapper {
+      @media (min-width: $width-sm) {
+        padding: 0 20px;
+        width: 60%;
+      }
+    }
+      &__copy {
+        @media (max-width: $width-md) {
+          display: none;
+        }
+        &--doctor {
+          color: #5a710d;
+          line-height: 1;
+          margin-bottom: 0;
+          font-family: $ff-mont;
+          font-weight: 700;
+        }
+        &--mobile {
+          display: none;
+          @media (max-width: $width-md) {
+            display: inherit;
+          }
+        }
+        &--read-more {
+          color: #5a710d;
+          text-decoration: underline;
+          font-size: 18px;
+          &:hover {
+            color: #5a710d;
+            text-decoration: none !important;
+          }
+        }
+      }
+
+  //Additional Team Mates Styling
+  &__mitchell,
+  &__ybarra {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $width-sm) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  &__image-wrapper--smaller-image {
+    @media (min-width: $width-sm) {
+      width: 30%;
+    }
+  }
+  &__copy-wrapper--smaller-image {
+    @media (min-width: $width-sm) {
+      width: 70%;
+    }
+  }
+
+  &__mitchell .about__image-wrapper {
+    order: 1;
+    @media (max-width: $width-sm) {
+      order: 0;
+    }
+  }
+
+}
+
+
+
