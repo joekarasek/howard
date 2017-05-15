@@ -40,6 +40,9 @@
     margin-right: 0px;
     border-right: none;
     padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .icon-reorder {
@@ -58,6 +61,7 @@
   #logo img {
     padding: 2px;
     padding-left: 5px;
+    max-width: 240px;
   }
   @media screen and (max-width: $width-md) {
     #logo {
@@ -68,8 +72,8 @@
       }
     }
     #primary-menu-trigger {
-      right: auto;
-      left: 0;
+      right: 0;
+      left: auto;
       color: #343B42;
     }
   }
@@ -86,28 +90,27 @@
 
   #primary-menu ul li {
     @media screen and (max-width: $width-md) {
-      border-top: 1px solid #ffffff;
-      border-bottom: 1px solid #ffffff;
-      background-color: #323437;
+      border-top: 1px solid #653490;
+      border-bottom: 1px solid #653490;
+      background-color: #ffffff;
     }
   }
   #primary-menu ul li > a {
     letter-spacing: 1px;
-    text-transform: none;
-    font-size: 17px;
+    font-size: 16px;
     padding: 10px 12px;
-    font-family: $ff-roboto-condensed;
-    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: $ff-poppins;
     &:hover {
       text-decoration: none !important;
     }
     @media screen and (max-width: 1300px) {
-      font-size: 16px;
+      font-size: 15px;
       padding: 10px 10px;
       padding-bottom: 10px;
     }
     @media screen and (max-width: $width-lg) {
-      font-size: 15px;
+      font-size: 14px;
       letter-spacing: 0.7px;
       padding: 10px 6px;
       padding-bottom: 10px;
@@ -133,12 +136,18 @@
 //resize header from Canvas
 #header,
 #header-wrap,
-#logo,
-#logo img {
+#logo {
   height: 100px !important;
   transition: height .4s ease, opacity .3s ease;
   @media (max-width: $width-md) {
   height: 80px !important;
+  }
+}
+#logo img {
+  height: 80px !important;
+  transition: height .4s ease, opacity .3s ease;
+  @media (max-width: $width-md) {
+    height: 70px !important;
   }
 }
 
