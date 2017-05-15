@@ -29,24 +29,31 @@
 
 
   .slide1 {
-    .slide__title {
-      color: #5a710d;
-      font-family: $ff-berkshir;
-      margin-bottom: 20px;
-      line-height: 0.8;
+    //.slide__title {
+    //  color: #5a710d;
+    //  font-family: $ff-berkshir;
+    //  margin-bottom: 20px;
+    //  line-height: 0.8;
+    //  font-weight: 400;
+    //}
+
+    .slide__copy {
+      @include font-size(26px,
+              24px,
+              24px,
+              24px,
+              24px);
+      color: #000000;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      line-height: 1;
       font-weight: 400;
     }
 
-    .slide__copy {
-      @include font-size(32px,
-              30px,
-              30px,
-              30px,
-              30px);
-      color: #323437;
-      margin-top: 5px;
-      margin-bottom: 70px;
-      line-height: 1;
+    .row {
+      transform: translateY(-100%);
+      top: 100%;
+      padding-bottom: 15px;
     }
   }
   .slide2 {
