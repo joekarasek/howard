@@ -2,8 +2,8 @@
   width: 100%;
   height: 100px;
 
-  $c-header: #323437 ;
-  $c-menu-trigger: #ffffff;
+  $c-header: #ffffff ;
+  $c-menu-trigger: #444444;
 
   &--transparent {
     position: absolute;
@@ -16,10 +16,10 @@
   #primary-menu > ul {
     margin-right: 0;
     border-right: none;
-    @include nav-color(#ffffff);
-    //@include nav-color(#ffffff, 1, 700);
-    //@include nav-color(#ffffff, 2, 700);
-    //@include nav-color(#ffffff, 3, 700);
+    @include nav-color(#653490);
+    @include nav-color(#9E5DDF, 1, 700);
+    @include nav-color(#64843F, 2, 700);
+    @include nav-color(#576FDC, 3, 700);
   }
 
   #primary-menu-trigger {
