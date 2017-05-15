@@ -3,7 +3,7 @@
   // ======= Fixes =======
   HelloWorldDevsTysonSteele.noOrphans('h1,h2,h3,h4,h5,h6,li,p', '.allow-orphan');
   HelloWorldDevsTysonSteele.scrollToFix('#primary-menu');
-  HelloWorldDevsTysonSteele.stopVideoModal('#videoModal', '#video-one');
+  HelloWorldDevsTysonSteele.stopVideoModal('#video-modal', '#video-iframe');
 
   // ======= Request Appointment Form =======
   HelloWorldDevsTysonSteele.requestAppointment('#mail-form', '#success_msg' , '7fb35345-752d-4792-9480-cd3db6674a62');
@@ -17,12 +17,12 @@
     effect: 'fade',
     speed: 500
   });
-  HelloWorldDevsTysonSteele.pyramidCarousel('.js-team-carousel', {
-    navText: [
-      '<img src="assets/arrow_left.png" alt="left navigation arrow">',
-      '<img src="assets/arrow_right.png" alt="right navigation arrow">'
-    ]
-  });
+  // HelloWorldDevsTysonSteele.pyramidCarousel('.js-team-carousel', {
+  //   navText: [
+  //     '<img src="assets/arrow_left.png" alt="left navigation arrow">',
+  //     '<img src="assets/arrow_right.png" alt="right navigation arrow">'
+  //   ]
+  // });
   HelloWorldDevsTysonSteele.tourCarousel('.js-tour-carousel', {
     items: 1,
     navText: [
@@ -45,13 +45,13 @@
       }
     }
   });
-  HelloWorldDevsTysonSteele.tourCarousel('.js-gallery-carousel', {
-    items: 1,
-    navText: [
-      '<i class="icon-chevron-left"></i>',
-      '<i class="icon-chevron-right"></i>'
-    ]
-  });
+  // HelloWorldDevsTysonSteele.tourCarousel('.js-gallery-carousel', {
+  //   items: 1,
+  //   navText: [
+  //     '<i class="icon-chevron-left"></i>',
+  //     '<i class="icon-chevron-right"></i>'
+  //   ]
+  // });
   HelloWorldDevsTysonSteele.updateCopyright('.js-copyright-year');
 
 }(jQuery, HelloWorldDevsTysonSteele));

@@ -5,7 +5,7 @@
             <h2 class="about__title">Watch Our Video</h2>
         </div>
         <div class="about__video-thumb">
-            <a href="#" data-toggle="modal" data-target="video-modal">
+            <a href="#" data-toggle="modal" data-target="#video-modal">
                 <img src="assets/video-thumb.jpg" alt="Watch a video with {{ mainDoctor }}">
             </a>
         </div>
@@ -38,5 +38,19 @@
         </div>
     </div>
     {%  include 'molecules/associations__carousel.twig' %}
+
+    <div id="video-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title">Buy Back Bling</h3>
+                </div>
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ij80aLjokfA" frameborder="0" allowfullscreen id="video-iframe"></iframe>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 </section>
 
