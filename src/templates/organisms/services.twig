@@ -1,30 +1,33 @@
 <section id="section-services">
     <div class="heading">
         <div class="container">
-            <h2>OUR SERVICES</h2>
-            <p>By actively preventing disease and decay through regular home care, professional dental cleanings and
-                regular exams, we’ll partner with you to maintain your healthy, beautiful smile. Prevention is always better
-                than treatment, so if it’s been a while since you’ve seen a dentist, please give us a call or <a href="#" data-toggle="modal" data-target="#requestAppointmentForm">
+            <h2>Services We Offer</h2>
+            <p>Select a service below for more information. Remember, prevention is always better than treatment, so if it’s been a while since your child has seen a dentist, please give us a call or <a href="#" data-toggle="modal" data-target="#requestAppointmentForm">
                     click&nbsp;to&nbsp;request&nbsp;an&nbsp;appointment</a>.</p>
         </div>
     </div>
 
+    <div class="container">
+        <div class="pyramid-list">
+            {% for service in services %}
+                {% if loop.index % 4 == 0 %}
+                    {% set color='green' %}
+                {% endif %}
+                {% if loop.index % 4 == 1 %}
+                    {% set color='blue' %}
+                {% endif %}
+                {% if loop.index % 4 == 2 %}
+                    {% set color='green' %}
+                {% endif %}
+                {% if loop.index % 4 == 3 %}
+                    {% set color='red' %}
+                {% endif %}
 
-
-
-    <!--services-additional-->
-    <div class="services--additional">
-        <div class="container-fluid">
-            <div class="row">
-                {% for service in services %}
-                    <div class="col-sm-6 col-md-3 service-card"><a href="#" data-target="#service--{{ service.modalTarget }}" data-toggle="modal" class="image-link"><img src="assets/services/{{ service.image }}" alt="{{ service.title }}"></a>
-                        <div class="services--thumbnail-text odd">
-                            <h6><a href="#" data-target="#service--{{ service.modalTarget }}" data-toggle="modal">{{ service.title }}</a></h6>
-                            <a href="#" data-target="#service--{{ service.modalTarget }}" data-toggle="modal" class="services-plus">LEARN MORE</a>
-                        </div>
-                    </div>
-                {% endfor %}
+            <div class="pyramid-list__item">
+                <img src="assets/service_arrow--{{ color }}.png" alt="{{ color }}arrow icon">
+                <a href="#" data-toggle="modal" data-target="#service--{{ service.modalTarget }}" class="pyramid-list__link">{{ service.title }}</a>
             </div>
+            {% endfor %}
         </div>
     </div>
 
