@@ -17,12 +17,6 @@
     effect: 'fade',
     speed: 500
   });
-  // HelloWorldDevsTysonSteele.pyramidCarousel('.js-team-carousel', {
-  //   navText: [
-  //     '<img src="assets/arrow_left.png" alt="left navigation arrow">',
-  //     '<img src="assets/arrow_right.png" alt="right navigation arrow">'
-  //   ]
-  // });
   HelloWorldDevsTysonSteele.tourCarousel('.js-tour-carousel', {
     items: 1,
     navText: [
@@ -45,14 +39,32 @@
       }
     }
   });
-  // HelloWorldDevsTysonSteele.tourCarousel('.js-gallery-carousel', {
-  //   items: 1,
-  //   navText: [
-  //     '<i class="icon-chevron-left"></i>',
-  //     '<i class="icon-chevron-right"></i>'
-  //   ]
-  // });
+  HelloWorldDevsTysonSteele.pyramidCarousel('.js-review-carousel', {
+    items: 1,
+    autoplay: true,
+    autoplaySpeed: 400,
+    autoplayTimeout: 6000,
+    autoplayHoverPause:false,
+    nav: true,
+    dots: false,
+    margin: 40,
+    navText: [
+      '<img src="assets/review-arrow.png"/>',
+      '<img src="assets/review-arrow__next.png"/>'
+    ],
+    responsive: {
+      768: {
+        items: 2,
+        dots: true
+      },
+      992: {
+        items: 3
+      }
+    }
+  });
   HelloWorldDevsTysonSteele.updateCopyright('.js-copyright-year');
+
+
 
 }(jQuery, HelloWorldDevsTysonSteele));
 
