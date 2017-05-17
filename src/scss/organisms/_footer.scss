@@ -1,16 +1,16 @@
 //Overrides for Canvas
 #footer {
   position: relative;
-  background-color: #444444;
+  background-color: #81B251;
   border-top: none;
   a {
-    @include link-color(#ffffff);
+    @include link-color(#000000);
   }
   p {
     font-weight: 400;
-    font-family: $ff-raleway;
+    font-family: $ff-lato;
     font-size: 14px;
-    color: #ffffff;
+    color: #000000;
     @media screen and (max-width: $width-md) {
       float: none;
     }
@@ -33,7 +33,7 @@
   }
   .tyson-steele-text {
     font-weight: 400;
-    color: #ffffff;
+    color: #000000;
     margin-bottom: 5px;
   }
 
@@ -44,7 +44,7 @@
   .flex--wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     @media (max-width: $width-sm) {
       flex-direction: column;
