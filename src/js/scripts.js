@@ -58,7 +58,8 @@
         dots: true
       },
       992: {
-        items: 3
+        items: 3,
+        dots: true
       }
     }
   });

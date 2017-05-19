@@ -2,7 +2,7 @@ a.btn,
 button.btn {
   font-family: $ff-poppins;
   font-weight: 400 !important;
-  @include font-size(18px, 18px, 17px, 16px, 16px);
+  @include font-size(18px, 18px, 17px, 16px, 14px);
   letter-spacing: 1px;
 
   background-color: #FFA101;
@@ -36,11 +36,6 @@ button.btn {
   //    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.36);
   //  }
   //}
-
-
-  @media screen and (max-width: $width-sm) {
-    font-size: 16px;
-  }
 
   &.shadowed {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.30);
