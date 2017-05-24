@@ -1,4 +1,5 @@
 #section-reviews {
+  position: relative;
   background-image: url('/assets/review-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -6,7 +7,36 @@
   border-bottom: solid 5px #92BF63;
   padding-top: 30px;
   padding-bottom: 30px;
+  @media (max-width: 550px) {
+    padding-bottom: 95px;
+  }
 
+  .section-reviews__flair {
+    position: absolute;
+    bottom: 0;
+    &--left {
+      width: 20%;
+      max-width: 360px;
+      @media (max-width: 992px) {
+        width: 25%;
+      }
+      @media (max-width: 550px) {
+        max-width: 230px;
+        width: 65%;
+      }
+    }
+    &--right {
+      width: 15%;
+      right: 0;
+      @media (max-width: 992px) {
+        width: 18%;
+      }
+      @media (max-width: 550px) {
+        display: none;
+        width: 25%;
+      }
+    }
+  }
 
 
   .heading {
